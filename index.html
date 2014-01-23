@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<link href="css/TreninWebMobile.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.structure.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+
+
+</head>
+
+<body>
+<!--Step 1 aka Page 1 -->
+<div data-role="page" id="page1">
+	  
+  <!--content -->
+  <div role="main" class="ui-content" style="text-align:center">
+		<h1> Selamat Datang </h1>
+		<img src="gambar/logo.jpg" />	
+		<h3> Web Mobile Rasmi HRMIS </h3>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-inset="false">
+			<h3>Info HRMIS</h3>
+			<ul data-role="listview">
+				<li><a href="#page2">Visi & Misi</a></li>
+				<li><a href="#page3">Piagam Pelanggan</a></li>				
+			</ul>
+			</div>
+			<div data-role="collapsible" data-inset="false">
+			<h3>Direktori</h3>
+			<ul data-role="listview">
+				<li><a href="#page4">BPM, JPA</a></li>
+				<li><a href="#">Helpdesk Level-0</a></li>				
+			</ul>
+			</div>
+			<div data-role="collapsible" data-inset="false">
+			<h3>Soalan Lazim</h3>
+			<ul data-role="listview">
+				<li><a href="#">Soalan Lazim - Wiki Style</a></li>					
+			</ul>
+			</div>
+			<div data-role="collapsible" data-inset="false">
+			<h3>Muat Turun</h3>
+			<ul data-role="listview">
+				<li><a href="#">Modul & Submodul</a></li>
+				<li><a href="#">Penerbitan & Promosi</a></li>				
+				<li><a href="#">Artikel</a></li>	
+			</ul>
+			</div>
+			<div data-role="collapsible" data-inset="false">
+			<h3>Galeri</h3>
+			<ul data-role="listview">
+				<li><a href="#">Foto</a></li>
+				<li><a href="#">Video</a></li>				
+				<li><a href="#">Audio</a></li>	
+				<li><a href="#">Keratan Akhbar</a></li>	
+			</ul>
+			</div>
+			<div data-role="collapsible" data-inset="false">
+			<h3>Hubungi Kami</h3>
+			<ul data-role="listview">
+				<li><a href="#">HRMIS Helpdesk</a></li>
+			</div>
+		</div>
+	</div>
+  
+	<div data-role="footer" data-position="fixed">
+		<h4>Hak Cipta SD.BPM.JPA © 2014 | Web Mobile Rasmi HRMIS</h4>
+	</div>
+</div>
+
+<!--Step 1 aka Page 2 -->
+<div data-role="page" id="page2">
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Misi Dan Visi</h3>
+	
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">		
+	<h2>Visi</h2>
+	Menjadikan HRMIS aplikasi unggul dalam pengurusan sumber manusia sektor awam bertaraf dunia melalui kecanggihan ICT selaras dengan wawasan kerajaan.
+
+	<h2>Misi</h2>
+	<p>Memastikan semua agensi dalam sektor awam melaksanakan Sistem Maklumat Pengurusan Sumber Manusia (HRMIS) selaras dengan visi sumber manusia Perkhidmatan Awam dan matlamat Kerajaan Elektronik.</p>
+	<p>Memastikan HRMIS sentiasa relevan dalam pengurusan sumber manusia sektor awam melalui penambahbaikan berterusan.</p>
+  
+  
+	<a href="#pop1" class="ui-btn ui-btn-inline" data-transition="pop" data-rel="popup">Objektif</a>
+	<div data-role="popup" id="pop1" data-dismissible="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div data-role="header">
+			<h3>Objektif</h3>
+		</div>
+		<div role="main" class="ui-content">
+			<ol>
+			<li>Membolehkan perancangan tenaga kerja dan penentuan saiz perkhidmatan awam yang berkesan melalui maklumat pengurusan sumber manusia;</li>
+			<li>Mengautomasikan proses operasi pengurusan sumber manusia;</li>
+			<li>Membangunkan maklumat sumber manusia yang bersepadu dan kemas kini untuk tujuan perancangan sumber manusia yang berkesan;</li>
+			<li>Memudahkan komunikasi dan integrasi secara horizontal, penyelarasan proses sumber manusia dan capaian melalui single window;</li>
+			<li>Menyumbang ke arah pewujudan persekitaran paperless; dan</li>
+			<li>Menyediakan satu sistem maklumat sumber manusia yang terbuka dan fleksibel serta kemas kini bagi memenuhi keperluan pengurusan di pelbagai peringkat agensi.</li></ol>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Kembali</a>
+			<a href="#page3" class="ui-btn ui-corner-all ui-shadow" data-transition="flow">Piagam Pelanggan</a>
+		</div>
+	</div>	
+		
+  </div>
+  
+  <a href="#page3" class="ui-btn" data-transition="pop">Piagam Pelanggan</a>
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">    
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page3" data-icon="grid">Piagam Pelanggan</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active ui-state-persist">Visi & Misi</a></li>
+                <li><a href="#page4" data-icon="gear">Direktori</a></li>
+            </ul>
+        </div><!-- /navbar -->
+  </div>
+
+</div>
+
+<!--Step 1 aka Page 3 -->
+<div data-role="page" id="page3">
+
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Piagam Pelanggan</h3>
+	
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">	
+	<img src="gambar/PiagamP.jpg" />
+	Kami berjanji akan :
+	<!--ul data-role="listview"-->
+	<ol>
+	<li>Memastikan data asas yang disediakan mengikut format dimasukkan dalam pangkalan data HRMIS dalam masa satu bulan dari tarikh diterima daripada agensi.</li>
+	<li>Memastikan downtime operasi aplikasi HRMIS pada satu masa tidak melebihi empat jam.</li>
+	<li>Memastikan aduan melalui Meja Bantuan diselesaikan dalam tempoh berikut: Seperti Rajah 1 diatas.</li>
+	<li>Membuat perakuan pembayaran dalam masa 14 hari dari tarikh invois yang lengkap diterima.</li>
+	
+
+  </div>
+  <br>
+  <a href="#page2" class="ui-btn" data-transition="pop" data-direction="reverse">Visi & Misi</a>
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Piagam Pelanggan</a></li>
+                <li><a href="#page2" data-icon="star">Visi & Misi</a></li>
+                <li><a href="#page4" data-icon="gear">Direktori</a></li>
+            </ul>
+        </div><!-- /navbar -->
+  </div>
+
+</div>
+
+</body>
+
+<!--Step 1 aka Page 4 -->
+<div data-role="page" id="page4">
+
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+	<h3>Direktori</h3>	
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">	
+	<h3>Bahagian Pengurusan Maklumat</h3>
+	<ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama">
+		<li>
+			<img src="gambar/putri.tajudin.jpg" width="200" />
+			<strong> Nama :</strong> Putri Noorafedah Binti Megat Tajudin
+			<p> <strong>Jawatan :</strong>  Ketua Penolong Pengarah</p>
+			<p>
+			<a href="tel=+60383164035" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+			<a href="sms://60133422264" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline"> SMS </a>
+			<a href="mailto:putri.tajudin@jpa.gov.my" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline"> Pesanan Email </a>
+			</p>
+		</li>
+		<li>			
+			<a href="#popupMenu" data-rel="popup" data-transition="slideup">
+				<img src="gambar/haryani.rasidi.jpg" width="200" />
+				<strong> Nama :</strong> Haryani Binti Mohd Rasidi
+				<p> <strong>Jawatan :</strong> Penolong Pengarah</p>
+			</a>
+			<div data-role="popup" id="popupMenu" data-theme="b">
+				<ul data-role="listview" data-inset="true" style="min-width:210px;">				
+				<li><a href="tel=+60383164282" class="ui-btn ui-icon-phone ui-corner-all ui-btn-inline ui-btn-icon-left">Telefon</a></li>
+				<li><a href="sms://60133422264" class="ui-btn ui-icon-mail ui-corner-all ui-btn-inline ui-btn-icon-left"> SMS </a></li>
+				<li><a href="mailto:haryani.rasidi@jpa.gov.my" class="ui-btn ui-icon-action ui-corner-all ui-btn-inline ui-btn-icon-left"> Pesanan Email </a></li>				
+				</ul>
+			</div>
+		</li>
+		<li>
+			<img src="gambar/zaki.abdullah.jpg" width="200" />
+			<strong> Nama :</strong> Ahmad Zaki Bin Abdullah
+			<p> <strong>Jawatan :</strong> Penolong Pengarah</p>
+			<p> <strong>E-Mel:</strong> zaki.abdullah@jpa.gov.my </p>
+		</li>
+		<li>
+			<img src="gambar/aimmi.ariffin.jpg" width="200" />
+			<strong> Nama :</strong> Aimmi Binti Ariffin
+			<p> <strong>Jawatan :</strong> Penolong Pegawai Teknologi Maklumat</p>
+			<p> <strong>E-Mel:</strong>  aimmi.ariffin@jpa.gov.my </p>
+		</li>
+		<li>
+			<img src="gambar/Masri.jpg" width="200" />
+			<strong> Nama :</strong> Mohammad Asri Bin Jumari
+			<p> <strong>Jawatan :</strong> Pembantu Tadbir</p>
+			<p> <strong>E-Mel:</strong>   masri@jpa.gov.my </p>
+		</li>
+	</ul>		
+  </div>
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+            <ul>
+                <li><a href="#page3" data-icon="grid">Piagam Pelanggan</a></li>
+                <li><a href="#page2" data-icon="star">Visi & Misi</a></li>
+                <li><a href="#" data-icon="gear" class="ui-btn-active ui-state-persist">Direktori</a></li>
+            </ul>
+        </div><!-- /navbar -->
+  </div>
+</div>
+
+</html>
+
